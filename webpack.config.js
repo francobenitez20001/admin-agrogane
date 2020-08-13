@@ -10,7 +10,7 @@ module.exports = {
     output:{
         path:path.resolve(__dirname,'dist'),
         filename:'js/[name].js',
-        publicPath:'http://localhost:3001',
+        publicPath:process.env.PUBLIC_PATH,
         chunkFilename:'js/[id].[chunkhash].js'
     },
     mode:'production',

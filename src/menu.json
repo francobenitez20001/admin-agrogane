@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "titulo":"Articulos",
+        "subtitulo":"Administrá ahora tus articulos",
+        "boton":"Administrar",
+        "url":"/articulos"
+    },
+    {
+        "id":2,
+        "titulo":"Nosotros",
+        "subtitulo":"Administrá la seccion nosotros",
+        "boton":"Administrar",
+        "url":"/nosotros"
+    },
+    {
+        "id":3,
+        "titulo":"Contacto",
+        "subtitulo":"Administrá ahora los datos de contacto",
+        "boton":"Administrar",
+        "url":"/contacto"
+    },
+    {
+        "id":4,
+        "titulo":"Autores",
+        "subtitulo":"Administrar autores",
+        "boton":"Administrar",
+        "url":"/autores"
+    },
+    {
+        "id":5,
+        "titulo":"Casos de éxito",
+        "subtitulo":"Administra tus casos de éxito",
+        "boton":"Administrar",
+        "url":"exitos"
+    },
+    {
+        "id":6,
+        "titulo":"Servicios",
+        "subtitulo":"Administrá ahora tus servicios",
+        "boton":"Administrar",
+        "url":"/servicios"
+    }
+]

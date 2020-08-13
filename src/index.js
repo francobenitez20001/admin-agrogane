@@ -1,7 +1,17 @@
-import React from 'react';
+import React,{Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import {FirebaseAppProvider} from 'reactfire';
+import firebaseConfig from './firebase-config';
 
-const container = document.getElementById('app');
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App/>,container)
+ReactDOM.render((
+  <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+    <Suspense fallback={'Cargando la app'}>
+      <App />
+    </Suspense>
+  </FirebaseAppProvider>),
+  document.getElementById('app')
+);
+

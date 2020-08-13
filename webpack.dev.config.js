@@ -10,16 +10,17 @@ module.exports = {
         //path es donde voy a guardar el archivo y filename es el nombre que se le va asignar
         path:path.resolve(__dirname,'dist'),
         filename:'js/[name].js',//[name] hace que automaticamente se le asigne el nombre que se le asigno en el entry.
-        publicPath:'http://localhost:9000/',
+        publicPath:'http://localhost:8080/',
         chunkFilename:'js/[id].[chunkhash].js'
     },
     mode:'development',
     devServer:{
-        contentBase:path.resolve(__dirname,'dist'),
+        contentBase:path.resolve('http:localhost:8080/'),
         open:true,
-        port:9000,
+        port:8080,
         hot:true,
     },
+
     //loader
     module:{
         rules:[
